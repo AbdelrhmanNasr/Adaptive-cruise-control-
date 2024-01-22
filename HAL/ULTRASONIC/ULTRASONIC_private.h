@@ -1,6 +1,6 @@
 /*
  * ----------------------------------------------------------------------------------
- * Filename     :	DC_Motor_private.h
+ * Filename     :	ULTRASONIC_private.h
  *
  * Author       :	Abdelrhman Nasr
  * Version      :	v1.0
@@ -13,10 +13,3 @@
  * v1.0		    	Abdelrhman Nasr		Initial Creation
  * ----------------------------------------------------------------------------------
  */
-
-#ifndef DC_MOTOR_PRIVATE_H
-#define DC_MOTOR_PRIVATE_H
-
-
-
-#endif /* DC_MOTOR_PRIVATE_H */

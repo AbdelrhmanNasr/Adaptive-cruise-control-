@@ -14,6 +14,7 @@
  * ----------------------------------------------------------------------------------
  */
 
+
 #include "../../LIB/STD_TYPES.h"
 #include "../../LIB/BIT_MATH.h"
 
@@ -32,38 +33,37 @@ void EXTI_voidInitPinConnection(EXTI_t* Copy_pEXTI_t_Obj)
     {
     case INT0:
         #if INT0_PIN == INT0_INPUT_PULLUP
-            DIO_voidSetPinDirection(EXTI0_PORT, EXTI0_PIN, INPUT);
-            DIO_voidSetPinValue(EXTI0_PORT, EXTI0_PIN, HIGH);
+    		MDIO_voidSetPinDir(EXTI0_PORT, EXTI0_PIN, INPUT);
+            MDIO_voidSetPinValue(EXTI0_PORT, EXTI0_PIN, HIGH);
         #elif INT0_PIN == INT0_INPUT_EXTERNALPULLDOWN
-            DIO_voidSetPinDirection(EXTI0_PORT, EXTI0_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDirection(EXTI0_PORT, EXTI0_PIN, INPUT);
         #elif INT0_PIN == INT0_INPUT_EXTERNALPULLUP
-            DIO_voidSetPinDirection(EXTI0_PORT, EXTI0_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDirection(EXTI0_PORT, EXTI0_PIN, INPUT);
         #endif
+        break;
+
     case INT1:
         #if INT1_PIN == INT0_INPUT_PULLUP
-            DIO_voidSetPinDirection(EXTI1_PORT, EXTI1_PIN, INPUT);
-            DIO_voidSetPinValue(EXTI1_PORT, EXTI1_PIN, HIGH);
+            MDIO_voidSetPinDir(EXTI1_PORT, EXTI1_PIN, INPUT);
+            MDIO_voidSetPinValue(EXTI1_PORT, EXTI1_PIN, HIGH);
         #elif INT1_PIN == INT0_INPUT_EXTERNALPULLDOWN
-            DIO_voidSetPinDirection(EXTI1_PORT, EXTI1_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDirection(EXTI1_PORT, EXTI1_PIN, INPUT);
         #elif INT1_PIN == INT0_INPUT_EXTERNALPULLUP
-            DIO_voidSetPinDirection(EXTI1_PORT, EXTI1_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDirection(EXTI1_PORT, EXTI1_PIN, INPUT);
         #endif
+        break;
+
     case INT2:
         #if INT2_PIN == INT0_INPUT_PULLUP
-            DIO_voidSetPinDirection(EXTI2_PORT, EXTI2_PIN, INPUT);
-            DIO_voidSetPinValue(EXTI2_PORT, EXTI2_PIN, HIGH);
+    		MDIO_voidSetPinDir(EXTI2_PORT, EXTI2_PIN, INPUT);
+            MDIO_voidSetPinValue(EXTI2_PORT, EXTI2_PIN, HIGH);
         #elif INT2_PIN == INT0_INPUT_EXTERNALPULLDOWN
-            DIO_voidSetPinDirection(EXTI2_PORT, EXTI2_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDir(EXTI2_PORT, EXTI2_PIN, INPUT);
         #elif INT2_PIN == INT0_INPUT_EXTERNALPULLUP
-            DIO_voidSetPinDirection(EXTI2_PORT, EXTI2_PIN, INPUT);
-            break;
+            MDIO_voidSetPinDir(EXTI2_PORT, EXTI2_PIN, INPUT);
         #endif
-    
+        break;
+
     default:
         break;
     }

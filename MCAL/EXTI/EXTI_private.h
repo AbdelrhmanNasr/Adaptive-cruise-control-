@@ -14,18 +14,19 @@
  * ----------------------------------------------------------------------------------
  */
 
+
 #ifndef EXTI_PRIVATE_H
 #define EXTI_PRIVATE_H
 
 /* Pins Connection On Hardware */
 /* INT0 */
-#define EXTI0_PORT      DIO_PORTD_D
+#define EXTI0_PORT     	DIO_PORT_D
 #define EXTI0_PIN       PIN2
 /* INT1 */
-#define EXTI1_PORT      DIO_PORTD_D
+#define EXTI1_PORT      DIO_PORT_D
 #define EXTI1_PIN       PIN3
 /* INT2 */
-#define EXTI2_PORT      DIO_PORTD_B
+#define EXTI2_PORT      DIO_PORT_B
 #define EXTI2_PIN       PIN2
 
 /* For Interrupt Senses */

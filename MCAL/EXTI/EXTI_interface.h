@@ -14,6 +14,7 @@
  * ----------------------------------------------------------------------------------
  */
 
+
 #ifndef EXTI_INTERFACE_H
 #define EXTI_INTERFACE_H
 
@@ -38,7 +39,7 @@ void EXTI_voidInitPinConnection(EXTI_t* Copy_pEXTI_t_Obj);
 void EXTI_voidTriggerEdge(EXTI_t* Copy_pEXTI_t_Obj);
 void EXTI_voidEnable(EXTI_t* Copy_pEXTI_t_Obj);
 void EXTI_voidDisable(EXTI_t* Copy_pEXTI_t_Obj);
-void EXTI_voidSetCallback(EXTI_t* Copy_pEXTI_t_Obj, void (*NotificationFunction) (void))
+void EXTI_voidSetCallback(EXTI_t* Copy_pEXTI_t_Obj, void (*NotificationFunction) (void));
 
 
 #endif /* EXTI_INTERFACE_H */

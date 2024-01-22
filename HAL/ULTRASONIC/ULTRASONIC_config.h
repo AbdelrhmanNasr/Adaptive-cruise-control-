@@ -1,6 +1,6 @@
 /*
  * ----------------------------------------------------------------------------------
- * Filename     :	LM35_private.h
+ * Filename     :	ULTRASONIC_config.h
  *
  * Author       :	Abdelrhman Nasr
  * Version      :	v1.0
@@ -13,10 +13,15 @@
  * v1.0		    	Abdelrhman Nasr		Initial Creation
  * ----------------------------------------------------------------------------------
  */
- 
-#ifndef LM35_PRIVATE_H_
-#define LM35_PRIVATE_H_
+
+#ifndef _ULTRASONIC_CONFIG_H_
+#define _ULTRASONIC_CONFIG_H_
+
+#define TRIG_PORT	DIO_PORT_C
+#define TRIG_PIN	PIN5
+
+#define ECHO_PORT	DIO_PORT_D
+#define ECHO_PIN	PIN6
 
 
-
-#endif 
+#endif // _ULTRASONIC_CONFIG_H_
